@@ -1,0 +1,14 @@
+<!doctype html>
+<title>SOCEK STORE</title>
+<h1>WELCOME TO SOCEK STORE</h1>
+<p>Your label is: <strong>{{ label }}</strong></p>
+<p>Your favorite words is: <strong>{{ words }}</strong></p>
+{% if page %}
+<p>Your are in subpage <strong>{{ page }}</strong></p>
+{% endif %}
+<h2>Sites:</h2>
+<ul>
+    {% for url in urls %}
+    <li><a href="/{{ url }}">{{ url }}</a></li>
+    {% endfor %}
+</ul>
