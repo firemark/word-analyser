@@ -1,3 +1,5 @@
+output/*
+an-output/*
 logs
 webapp/urls
 webapp/ml.pickle
