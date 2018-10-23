@@ -31,4 +31,4 @@ title 'Drop banned ips from logs'
 tt grep -vFf output/banned_ips output/parsed_logs_3 > output/parsed_logs_4
 
 title 'Concat terms without banned ips per ip'
-tt ./concat_terms.py output/parsed_logs_3 > output/parsed_logs_final_without_banned_ips
+tt ./concat_terms.py output/parsed_logs_4 > output/parsed_logs_final_without_banned_ips
